@@ -1,0 +1,28 @@
+<div class="row">
+    <form [formGroup]="authForm" (ngSubmit)="submitForm()">
+        <fieldset>
+            <div class="row">
+                <label>Username : </label>
+                <input
+                formControlName="username"
+                placeholder="Username"
+                type="text" />
+            </div>
+            <div class="row">
+                <label>Password : </label>
+                <input
+                formControlName="password"
+                placeholder="Password"
+                type="text" />
+            </div>
+            <div class="row">
+                <button type="submit">
+                Login</button>
+            </div>
+            <div class="row">
+                <a [routerLink]="['/forgotpassword']">Forgot Password</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
